@@ -50,3 +50,4 @@ page.asp?id=1" or 1=1 -- true
 page.asp?id=1 and 1=2 -- false
 ```
 This word-list was created to try to confirm SQLinjections in the proposed way:
+[sqli-logic.txt](sqli-logic.txt)
