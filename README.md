@@ -7,7 +7,7 @@ This is all about web &amp; bugbounty
 
 
 (2) Determine the data types of the columns =>  
-   i) ' UNION SELECT 'a', 'a' from DUAL-- -> Oracle database
+   i) ' UNION SELECT 'a', 'a' from DUAL-- -> here is a built-in table on Oracle called dual which can be used for this purpose
    ii) ' UNION SELECT 'a', 'a'#
 
 
