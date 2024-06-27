@@ -1,4 +1,4 @@
-# Bug Bounty
+![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/fe4f34db-b49e-4210-9351-b9af60df28d1)# Bug Bounty
 
 # ALL about Recon
 
@@ -51,3 +51,28 @@ dig xyz.com MX
 [Shodan.io](https://www.shodan.io/)
 - Shodan.io collects information related to any device it can find connected online
 - Shodan.io is a search engine for the Internet of Things.
+  
+
+<b>Frist thing first to get the ip lets ping </b>
+
+``` ping brac.ac.bd```
+
+![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/4c49ff42-5e5b-4123-a195-83285c4f4d2b)
+
+<b> searchig IP in sodan </b>
+![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/983b4202-85e0-4f26-9e65-9c846f3bdefc)
+
+<b>Autonomous System Numbers </b>
+
+We can do this using Autonomous System Numbers.
+
+An autonomous system number (ASN) is a global identifier of a range of IP addresses. If you are an enormous company like Google you will likely have your own ASN for all of the IP addresses you own.
+
+We can put the IP address into an ASN lookup tool such as https://asnlookup.com/,
+
+![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/b6c520da-d990-4989-9528-14fd4faba118)
+
+
+Knowing the ASN is helpful, because we can search Shodan for things such as coffee makers or vulnerable computers within our ASN
+
+![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/617337e4-cff6-4049-b449-cefc124466bf)
