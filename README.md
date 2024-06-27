@@ -2,8 +2,7 @@
 
 # ALL about Recon
 
-Passive Reconnaissance
-======================
+## Passive Reconnaissance
 
 ### WHOIS and DNS Queries
 
