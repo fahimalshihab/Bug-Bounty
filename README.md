@@ -1,4 +1,4 @@
-![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/fe4f34db-b49e-4210-9351-b9af60df28d1)# Bug Bounty
+# Bug Bounty
 
 # ALL about Recon
 
