@@ -76,3 +76,15 @@ We can put the IP address into an ASN lookup tool such as https://asnlookup.com/
 Knowing the ASN is helpful, because we can search Shodan for things such as coffee makers or vulnerable computers within our ASN
 
 ![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/617337e4-cff6-4049-b449-cefc124466bf)
+
+# SubDOmains
+### waybackmachine
+[wayback](https://wayback-api.archive.org/)
+### FFUF
+ffuf -w wordlist.txt -u http://url.com/FUZZ -fc 403 -p 2
+### dig
+``` dig axfr @ip abc.com```
+### sublist3r
+``` python3 sublist3r.py -d abc.com```
+### AMASS
+  ```amass enum -passive -d yahoo.com```
