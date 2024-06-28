@@ -82,9 +82,28 @@ Knowing the ASN is helpful, because we can search Shodan for things such as coff
 [wayback](https://wayback-api.archive.org/)
 ### FFUF
 ffuf -w wordlist.txt -u http://url.com/FUZZ -fc 403 -p 2
+### dirb
+dirb https://yahoo.com
 ### dig
 ``` dig axfr @ip abc.com```
 ### sublist3r
 ``` python3 sublist3r.py -d abc.com```
 ### AMASS
   ```amass enum -passive -d yahoo.com```
+
+## Info gathering
+### W3Techs
+W3Techs provides information about the usage of various types of technologies on the web.
+
+[W3techs](https://w3techs.com/sites)
+
+### wappalazyer
+![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/a8133a98-5e73-4b88-97df-34b01cf8c53f)
+
+## WPScan
+```wpscan --url https://tryhackme.com -e ap --plugins-detection aggressive```
+ 
+![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/e6cb005f-9f50-4a6e-a081-c16ced49f02e)
+
+ ## nmap
+ 
