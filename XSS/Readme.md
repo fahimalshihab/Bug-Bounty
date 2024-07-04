@@ -1,5 +1,6 @@
 ## Evil server 
 ``` node evil-server.js ```
+[evil-server.js](https://github.com/fahimalshihab/Bug-Bounty/blob/main/XSS/Practice/evil-server.js)
 
 ## Document.cookie
   ``` js
