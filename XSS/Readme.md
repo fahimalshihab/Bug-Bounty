@@ -1,6 +1,9 @@
 ## Evil server 
-``` node evil-server.js ```
-[evil-server.js](https://github.com/fahimalshihab/Bug-Bounty/blob/main/XSS/Practice/evil-server.js)
+```bash
+node evil-server.js
+```
+download the zip file and use the command on terminal
+[evil-server.js](https://github.com/fahimalshihab/Bug-Bounty/blob/main/XSS/Practice/evil-server-js.zip)
 
 ## Document.cookie
   ``` js
