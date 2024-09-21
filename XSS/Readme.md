@@ -32,6 +32,10 @@ URL REdirection:
 ```
 <iframe src="http://bing.com" height = "100%" width="100%"></iframe>
 ```
+```
+<script>document.location.href="http://twitter.com"</script>
+
+```
 
 ### stored :
 
