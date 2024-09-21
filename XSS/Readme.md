@@ -28,6 +28,11 @@ javascript:alert()
 ```
 ![image](https://github.com/user-attachments/assets/c241170a-c0c8-43c1-b6a8-077e09b5a098)
 
+URL REdirection:
+```
+<iframe src="http://bing.com" height = "100%" width="100%"></iframe>
+```
+
 ### stored :
 
 ```
