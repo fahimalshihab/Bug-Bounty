@@ -12,6 +12,10 @@
 ```
 
 ![image](https://github.com/user-attachments/assets/2a104e6f-2780-41ec-89aa-b55b49158ad7)
+```
+javascript:alert()
+```
+![image](https://github.com/user-attachments/assets/c241170a-c0c8-43c1-b6a8-077e09b5a098)
 
 ### stored :
 ```
