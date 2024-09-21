@@ -5,7 +5,12 @@
 <h1>xss try</h1>
 <script>alert(1)</script>
 <script>alert(document.cookie)</script>
+'-alert(1)-'
+
 ```
+ifty' ; alert() ;'test
+
+![image](https://github.com/user-attachments/assets/8cda4789-521e-4bec-a2dd-5cb9daaf2595)
 
 ```
 "onmouseover="alert(1)
