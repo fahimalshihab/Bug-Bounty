@@ -68,6 +68,3 @@ These flaws often allow attackers to tamper with token payloads or generate vali
 
 
 
-# JWT Exploitation
-
-## PortSwigger Labs
